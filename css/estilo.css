@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado{
+    display: flex;
+    height: 100px;
+    background-color: #F3F3F3;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: #FFFFFF solid 3px;
+    /*dejo fijo el menu header por mas de que scrollee la pagina*/
+    position: sticky;
+    top: 0;
+}
+
+.encabezado nav ul li {
+
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+.encabezado nav ul li a {
+    /*quito apariencia por defecto de los enlaces*/
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: black;
+    font-weight: normal;
+
+}
+
+/* INICIO */
+#inicio {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-image: url(../imagenes/inicio2.jpg);
+    /*background-size: contain; se asegura que la imagen se vea completa*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*height: 600px;
+    width: 100%;
+    height: 900px;
+    text-align: center;
+    background-image: url(/imagenes/inicio2.jpg);
+    max-width: 90%;
+    background-size: cover;
+    grid-area: inicio;
+    max-height: 90%;*/
+    padding-top: 5rem;
+
+
+}
+
+/* ESTUDIO */
+#estudio{
+    background-color: white;
+    grid-area: estudio;
+}
+
+.imagenPersona{
+    margin: 25px;
+    height: 300px;
+}
+
+.datosPersona{
+    display: flex;
+    /* flex-direction por defecto esta en row, lo pongo para verlo explicito y recordar */
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nuestroEquipo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 2rem;*/
+
+}
+
+.nuestroEquipo h2{
+    margin-top: 80px;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.fraseNuestroEquipo{
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    /*padding: 10px;*/
+    text-align: center;
+}
+
+.fraseNuestroEquipoContinuacion{
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    /*padding: 10px;*/
+    text-align: center;
+}
+
+.nombreTituloPersona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.seccionTuProyecto {
+    background-image: url(../imagenes/enConstruccion.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2{
+    font-size: 20px; 
+}
+
+body{
+    /*font-family: 'Roboto';*/
+    font-family: 'Lato', sans-serif;
+}
+
+.tituloPrincipal{
+    margin-top: 80px;
+    margin-bottom: 15px;
+    font-size: 30px;
+
+}
+
+.proyecto1, .proyecto2, .proyecto3, .proyecto4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    
+}
+
+.galeria1, .galeria2, .galeria3, .galeria4{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+.imagenGaleria{
+    max-width: 300px;
+    max-height: 300px;
+
+}
+
+.proyecto1{
+    grid-area: proyecto1;
+}
+
+.proyecto2{
+    grid-area: proyecto2;
+}
+
+.proyecto3{
+    grid-area: proyecto3;
+}
+
+.proyecto4{
+    grid-area: proyecto4;
+}
+
+.footerProyectos{
+    grid-area: footerProyectos;
+
+}
+.gridProyectos{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "proyecto2 proyecto3"
+    "proyecto1 proyecto4"
+    "footerProyectos footerProyectos";
+}
+
+legend{
+    font-size: 17px; 
+}
+
+.slogan{
+    font-size: 17px;
+    font-weight: normal;
+    color: black;
+}
+
+footer{
+    height: 110px;
+    margin-top: 80px;
+    padding: 10px;
+    background-color: #F3F3F3;
+    text-align: center;
+}
+
+.redesSociales{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.redesIcon{
+    margin: 10px 20px;
+    height: 60px;
+    width: 60px;
+ 
+}
+
+/* MEDIAS QUERIES */
+/* ESTABLEZCO TAMANO PARA CELULAR */
+@media screen and (min-width: 320px) and (max-width: 599px){
+    .menuNavegacion{
+        display: none;
+    }
+
+    #inicio{
+        height: calc(100vh - 350px)
+        /*background-size con porcentaje, primero ancho luego el alto*/
+        /*background-size: 100% 70%;*/
+    }
+
+    .datosPersona{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .fraseNuestroEquipo, .fraseNuestroEquipoContinuacion{
+        max-width: 90%
+    }
+
+}
