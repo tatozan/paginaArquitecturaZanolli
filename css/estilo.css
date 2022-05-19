@@ -6,40 +6,22 @@
     padding: 0;
 }
 
-/*.encabezado{*/
-    /*height: 100px;*/
-    /*display: flex;
-    
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.encabezado{
+    background-color: #F3F3F3;
     border-bottom: #FFFFFF solid 3px;
-    background-color: #F3F3F3;*/
-    /*dejo fijo el menu header por mas de que scrollee la pagina*/
-   /* position: sticky;*/
-    /*z-index: auto;*/
-   /* top: 0;
-}*/
+    position: sticky;
+    top: 0;
+
+}
+
+.navContenedor{
+    display: flex;
+    justify-content: space-between; 
+}
 
 .fuentesNavBar{
     text-align: center;
     text-transform: uppercase;
-}
-.encabezado nav ul li {
-
-    display: inline-block;
-    list-style-type: none;
-
-}
-
-.encabezado nav ul li a {
-    /*quito apariencia por defecto de los enlaces*/
-    text-decoration: none;
-    text-transform: uppercase;
-    margin-left: 20px;
-    color: black;
-    font-weight: normal;
-
 }
 
 /* INICIO */
@@ -237,9 +219,9 @@ footer{
 /* MEDIAS QUERIES */
 /* ESTABLEZCO TAMANO PARA CELULAR */
 @media screen and (min-width: 320px) and (max-width: 599px){
-    .menuNavegacion{
+    /*.menuNavegacion{
         display: none;
-    }
+    }*/
 
     #inicio{
         height: calc(100vh - 350px)
