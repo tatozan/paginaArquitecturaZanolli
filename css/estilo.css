@@ -6,19 +6,25 @@
     padding: 0;
 }
 
-.encabezado{
-    display: flex;
-    height: 100px;
-    background-color: #F3F3F3;
+/*.encabezado{*/
+    /*height: 100px;*/
+    /*display: flex;
+    
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     border-bottom: #FFFFFF solid 3px;
+    background-color: #F3F3F3;*/
     /*dejo fijo el menu header por mas de que scrollee la pagina*/
-    position: sticky;
-    top: 0;
-}
+   /* position: sticky;*/
+    /*z-index: auto;*/
+   /* top: 0;
+}*/
 
+.fuentesNavBar{
+    text-align: center;
+    text-transform: uppercase;
+}
 .encabezado nav ul li {
 
     display: inline-block;
@@ -48,7 +54,7 @@
     /*background-size: contain; se asegura que la imagen se vea completa*/
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    /*background-position: center;*/
     /*height: 600px;
     width: 100%;
     height: 900px;
@@ -66,7 +72,6 @@
 /* ESTUDIO */
 #estudio{
     background-color: white;
-    grid-area: estudio;
 }
 
 .imagenPersona{
