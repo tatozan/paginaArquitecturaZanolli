@@ -22,6 +22,7 @@
     text-transform: uppercase;
     padding: 0 10px;
 }
+
  .fuentesNavBar:after{
     content: "";
     position: absolute;
@@ -65,8 +66,6 @@
     grid-area: inicio;
     max-height: 90%;*/
     padding-top: 5rem;
-    background-color: red;
-
 
 }
 
@@ -212,6 +211,109 @@ legend{
     color: black;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* FORMULARIO DE CONTACTO */
+#contacto{
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+    margin: 90px 0px;
+    width: 100%;
+    
+}
+
+.formularioContacto{
+    background-color: white;
+    width: 50%;
+    min-width: 315px;
+    /*padding: 70px;*/
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 6%;
+    border-radius: 1.5%;
+}
+
+.formularioContactoCampos{
+    display: flex;
+    flex-direction: column;
+    align-items:space-around;
+    /*row-gap: 30px;*/
+
+}
+
+.tituloContacto{
+    padding-bottom: 60px;
+}
+
+.etiquetaContacto{
+    text-align: left;
+    margin-top: 40px;
+}
+
+.inputContacto{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color:#b7b7b7;
+    
+}
+
+.inputContacto:focus{
+    /*quito cualquier valor por defecto del borde del input*/
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color:#72b7f4;
+ 
+}
+
+.botonEnviarFormulario{
+
+    width: 30%;
+    padding: 5px;
+    margin: auto;
+    margin-top: 40px;
+    border: 0;
+    border-radius: 3%;
+}
+
+.textAreaContacto{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color:#b7b7b7;
+}
+
+.textAreaContacto:focus{
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-color:#72b7f4;
+}
+
+
+
+
+
+
 footer{
     height: 110px;
     margin-top: 80px;
@@ -256,6 +358,12 @@ footer{
 
     .fraseNuestroEquipo, .fraseNuestroEquipoContinuacion{
         max-width: 90%
+    }
+
+    .formularioContacto{
+        padding-left: 15px;
+        padding-right: 15px;
+
     }
 
 }
