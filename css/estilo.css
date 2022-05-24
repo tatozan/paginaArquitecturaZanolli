@@ -11,18 +11,36 @@
     border-bottom: #FFFFFF solid 3px;
     position: sticky;
     top: 0;
+    padding: 15px;
+    z-index: 1;
 
-}
-
-.navContenedor{
-    display: flex;
-    justify-content: space-between; 
 }
 
 .fuentesNavBar{
+    position: relative;
     text-align: center;
     text-transform: uppercase;
+    padding: 0 10px;
 }
+ .fuentesNavBar:after{
+    content: "";
+    position: absolute;
+    background-color: #e4e4e4;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+
+ }
+
+.fuentesNavBar:hover{
+    color:#4f4e4e;
+}
+
+.fuentesNavBar:hover:after{
+    width: 100%;
+ }
 
 /* INICIO */
 #inicio {
@@ -47,6 +65,7 @@
     grid-area: inicio;
     max-height: 90%;*/
     padding-top: 5rem;
+    background-color: red;
 
 
 }
@@ -224,7 +243,8 @@ footer{
     }*/
 
     #inicio{
-        height: calc(100vh - 350px)
+        height: calc(100vh - 1500px);
+        background-size: cover;
         /*background-size con porcentaje, primero ancho luego el alto*/
         /*background-size: 100% 70%;*/
     }
