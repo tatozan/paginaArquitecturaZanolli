@@ -126,14 +126,6 @@
     justify-content: center;
 }
 
-
-.seccionTuProyecto {
-    background-image: url(../imagenes/enConstruccion.jpg);
-    height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 h2{
     font-size: 20px; 
 }
@@ -212,29 +204,23 @@ legend{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* FORMULARIO DE CONTACTO */
 #contacto{
-    background-color: black;
+    /*background-color: black;*/
     text-align: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 150px;
-    margin: 90px 0px;
+    /*padding: 150px;
+    margin: 90px 0px;*/
     width: 100%;
     
+}
+
+.seccionContacto{
+    margin: 0px 0px;
+    padding: 50px;
 }
 
 .formularioContacto{
@@ -310,8 +296,36 @@ legend{
 }
 
 
+.imagenArticulo{
+    width: 320px;
+    height: 320px;
+}
 
+.contenedorArticulo{
+    border: 1px solid rgb(135, 135, 135);
+    border-top: 0;
+    padding: 20px;
+}
 
+.articulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    row-gap: 20px;
+}
+
+.textoArticulo{
+   text-align:justify; 
+}
+
+.tituloArticulo{
+    text-align: left;
+}
+
+.textoContenedor{
+    padding-left: 10px;
+}
 
 
 footer{
@@ -337,6 +351,10 @@ footer{
  
 }
 
+
+footer{
+    padding-bottom: 115px;
+}
 /* MEDIAS QUERIES */
 /* ESTABLEZCO TAMANO PARA CELULAR */
 @media screen and (min-width: 320px) and (max-width: 599px){
@@ -365,5 +383,25 @@ footer{
         padding-right: 15px;
 
     }
+
+    /* NOVEDADES */
+    .articulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textoContenedor{
+        padding-left: 0px;
+    }
+    .tituloArticulo{
+        text-align: center;
+    }
+
+    .textoArticuloNovedades{
+        text-align: justify;
+    }
+
 
 }
